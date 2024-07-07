@@ -1,0 +1,126 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, #9000ff, #f4027b, #ffff00);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    height: 520px;
+    width: 330px;
+    background-color: white;
+    text-align: center;
+    /* border-radius: 15px; */
+    box-shadow: 5px 10px 10px 1px rgba(30, 30, 30, 0.648);
+}
+.cardHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+.leftHeader{
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+}
+.leftHeader i{
+    font-size: 26px;
+    color: rgba(0, 0, 0, 0.859);
+    padding:0 1px;
+    background-color: rgba(0, 0, 0, 0.859);
+    border-radius: 50px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.leftHeader p{
+    font-weight: bold;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.rightHeader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rightHeader button{
+    background-color: transparent;
+    border:2px solid rgb(0, 162, 255);
+    padding: 5px 20px;
+    font-size: 9px;
+    text-transform: uppercase;
+    color: rgb(0, 162, 255);
+    border-radius: 4px;
+    cursor: pointer;
+}
+.rightHeader i{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.card-post img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+.card-post i{
+    position: absolute;
+    color: white;
+    top: 50%;
+    right: 45%;
+    font-size: 75px;
+    transform: translate(-50%,-50%) scale(0);
+    opacity: 0.7;
+    transition: all ease 0.5s;
+    cursor: pointer;
+}
+.card-icons{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px;
+    margin-top: 10px;
+}
+.card-icons i{
+    font-size: 25px;
+    padding: 0 2px;
+    cursor: pointer;
+}
+.like-count{
+    display: flex;
+    align-items: center;
+    padding:0 12px;
+}
+.like-count i{
+    font-size: 11px;
+    padding: 0 5px;
+}
+.like-count p{
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.caption{
+    display: flex;
+    padding: 0 20px;
+}
+.caption p{
+    margin: -8px 0;
+    
+}
+#saved-msg{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: end;
+    margin-right: 10px;
+    font-size: 13px;
+    display: none;
+}
